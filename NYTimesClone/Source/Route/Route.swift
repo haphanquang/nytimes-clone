@@ -19,8 +19,16 @@ class Route {
         let viewModel = HomeViewModel()
         home.viewModel = viewModel
         
-        let windows = (UIApplication.shared.delegate as? AppDelegate)?.window
-        windows?.rootViewController = home
+        let nav = (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController as? UINavigationController
+        nav?.viewControllers = [home]
+    }
+    
+    static func createSearchTerm() -> SearchTermsViewController {
+        let vc = mainStoryboard.instantiateViewController(withIdentifier: "SearchTermsViewController") as! SearchTermsViewController
+        
+        let viewModel = SearchTermViewModel()
+        vc.viewModel = viewModel
+        return vc
     }
     
     static func showArticleDetail(from: UIViewController, article: Article) {

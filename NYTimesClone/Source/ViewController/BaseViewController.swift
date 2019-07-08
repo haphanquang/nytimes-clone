@@ -47,4 +47,8 @@ class BaseViewController <T: BasicViewModel> : UIViewController {
     func finishLoading() {
         
     }
+    
+    func displayNetworkError() {
+        
+    }
 }

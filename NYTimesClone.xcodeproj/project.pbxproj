@@ -16,7 +16,6 @@
 		F02D193F22D2312E006C5A47 /* NYTimesRepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D193E22D2312E006C5A47 /* NYTimesRepoTests.swift */; };
 		F02D194122D23142006C5A47 /* NYTimesUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D194022D23142006C5A47 /* NYTimesUtilTests.swift */; };
 		F02D194322D23348006C5A47 /* NYTimesViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D194222D23348006C5A47 /* NYTimesViewTest.swift */; };
-		F046232C22D0FA58008236A3 /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = F046232B22D0FA58008236A3 /* Term.swift */; };
 		F046232E22D1026F008236A3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F046232D22D1026F008236A3 /* DetailViewController.swift */; };
 		F046233122D10766008236A3 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = F046233022D10766008236A3 /* Route.swift */; };
 		F046233322D1113A008236A3 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F046233222D1113A008236A3 /* DetailViewModel.swift */; };
@@ -38,6 +37,13 @@
 		F097B88822CF9D3900B4F49D /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F097B88722CF9D3900B4F49D /* ArticleCell.swift */; };
 		F097B88A22CFB22C00B4F49D /* FastAccessRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F097B88922CFB22C00B4F49D /* FastAccessRepository.swift */; };
 		F097B88C22CFB24300B4F49D /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = F097B88B22CFB24300B4F49D /* Base.swift */; };
+		F0C3881322D36B360053D54B /* UpdatingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3881222D36B360053D54B /* UpdatingCell.swift */; };
+		F0C3881622D37ED40053D54B /* HeaderSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3881522D37ED40053D54B /* HeaderSectionCell.swift */; };
+		F0C3881822D37EDE0053D54B /* ImageSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3881722D37EDE0053D54B /* ImageSectionCell.swift */; };
+		F0C3881A22D37EF00053D54B /* TextSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3881922D37EF00053D54B /* TextSectionCell.swift */; };
+		F0C3881C22D37F050053D54B /* AdvertiseSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3881B22D37F050053D54B /* AdvertiseSectionCell.swift */; };
+		F0C3881E22D382A00053D54B /* SearchTermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3881D22D382A00053D54B /* SearchTermsViewController.swift */; };
+		F0C3882022D3831D0053D54B /* SearchTermsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3881F22D3831D0053D54B /* SearchTermsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +73,6 @@
 		F02D193E22D2312E006C5A47 /* NYTimesRepoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesRepoTests.swift; sourceTree = "<group>"; };
 		F02D194022D23142006C5A47 /* NYTimesUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesUtilTests.swift; sourceTree = "<group>"; };
 		F02D194222D23348006C5A47 /* NYTimesViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesViewTest.swift; sourceTree = "<group>"; };
-		F046232B22D0FA58008236A3 /* Term.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
 		F046232D22D1026F008236A3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F046233022D10766008236A3 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		F046233222D1113A008236A3 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
@@ -95,6 +100,13 @@
 		F097B88722CF9D3900B4F49D /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		F097B88922CFB22C00B4F49D /* FastAccessRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastAccessRepository.swift; sourceTree = "<group>"; };
 		F097B88B22CFB24300B4F49D /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		F0C3881222D36B360053D54B /* UpdatingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatingCell.swift; sourceTree = "<group>"; };
+		F0C3881522D37ED40053D54B /* HeaderSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSectionCell.swift; sourceTree = "<group>"; };
+		F0C3881722D37EDE0053D54B /* ImageSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSectionCell.swift; sourceTree = "<group>"; };
+		F0C3881922D37EF00053D54B /* TextSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSectionCell.swift; sourceTree = "<group>"; };
+		F0C3881B22D37F050053D54B /* AdvertiseSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertiseSectionCell.swift; sourceTree = "<group>"; };
+		F0C3881D22D382A00053D54B /* SearchTermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermsViewController.swift; sourceTree = "<group>"; };
+		F0C3881F22D3831D0053D54B /* SearchTermsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +218,7 @@
 				F097B87722CE3F6500B4F49D /* HomeViewModel.swift */,
 				F046233222D1113A008236A3 /* DetailViewModel.swift */,
 				F02D193622D1C9F8006C5A47 /* ArticleCellViewModel.swift */,
+				F0C3881F22D3831D0053D54B /* SearchTermsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -236,7 +249,6 @@
 			isa = PBXGroup;
 			children = (
 				F097B88122CE42D200B4F49D /* Article.swift */,
-				F046232B22D0FA58008236A3 /* Term.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -246,6 +258,8 @@
 			children = (
 				F097B88722CF9D3900B4F49D /* ArticleCell.swift */,
 				F02D193822D20C46006C5A47 /* LoadMoreCell.swift */,
+				F0C3881222D36B360053D54B /* UpdatingCell.swift */,
+				F0C3881422D37EBA0053D54B /* ArticleDetail */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,9 +270,21 @@
 				F02D193222D1BA8A006C5A47 /* BaseViewController.swift */,
 				F097B87522CE3F3A00B4F49D /* HomeViewController.swift */,
 				F02D193422D1C72B006C5A47 /* HomeArticlesFlowLayout.swift */,
+				F0C3881D22D382A00053D54B /* SearchTermsViewController.swift */,
 				F046232D22D1026F008236A3 /* DetailViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F0C3881422D37EBA0053D54B /* ArticleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F0C3881522D37ED40053D54B /* HeaderSectionCell.swift */,
+				F0C3881722D37EDE0053D54B /* ImageSectionCell.swift */,
+				F0C3881922D37EF00053D54B /* TextSectionCell.swift */,
+				F0C3881B22D37F050053D54B /* AdvertiseSectionCell.swift */,
+			);
+			path = ArticleDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,16 +419,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				F097B88A22CFB22C00B4F49D /* FastAccessRepository.swift in Sources */,
+				F0C3881822D37EDE0053D54B /* ImageSectionCell.swift in Sources */,
 				F097B87E22CE42B300B4F49D /* Constant.swift in Sources */,
-				F046232C22D0FA58008236A3 /* Term.swift in Sources */,
+				F0C3881C22D37F050053D54B /* AdvertiseSectionCell.swift in Sources */,
+				F0C3881A22D37EF00053D54B /* TextSectionCell.swift in Sources */,
+				F0C3881E22D382A00053D54B /* SearchTermsViewController.swift in Sources */,
 				F097B87A22CE3F8700B4F49D /* NYTimesRepository.swift in Sources */,
 				F02D193322D1BA8A006C5A47 /* BaseViewController.swift in Sources */,
 				F097B88222CE42D200B4F49D /* Article.swift in Sources */,
+				F0C3882022D3831D0053D54B /* SearchTermsViewModel.swift in Sources */,
 				F097B87C22CE3F9100B4F49D /* LocalDataRepository.swift in Sources */,
 				F046232E22D1026F008236A3 /* DetailViewController.swift in Sources */,
 				F02D193522D1C72B006C5A47 /* HomeArticlesFlowLayout.swift in Sources */,
 				F097B88022CE42BA00B4F49D /* Helper.swift in Sources */,
 				F046233122D10766008236A3 /* Route.swift in Sources */,
+				F0C3881322D36B360053D54B /* UpdatingCell.swift in Sources */,
 				F097B84122CE3BE600B4F49D /* AppDelegate.swift in Sources */,
 				F097B87622CE3F3A00B4F49D /* HomeViewController.swift in Sources */,
 				F097B88822CF9D3900B4F49D /* ArticleCell.swift in Sources */,
@@ -411,6 +442,7 @@
 				F097B88422CE435C00B4F49D /* NetworkRepository.swift in Sources */,
 				F097B88622CE686100B4F49D /* NYTimesResults.swift in Sources */,
 				F02D193722D1C9F8006C5A47 /* ArticleCellViewModel.swift in Sources */,
+				F0C3881622D37ED40053D54B /* HeaderSectionCell.swift in Sources */,
 				F097B88C22CFB24300B4F49D /* Base.swift in Sources */,
 				F097B87822CE3F6500B4F49D /* HomeViewModel.swift in Sources */,
 			);

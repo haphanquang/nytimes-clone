@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import UIKit
+
+struct Color {
+    static let darkWhite = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 0.9)
+}
+
+
+let dateFormatter =  DateFormatter()
+

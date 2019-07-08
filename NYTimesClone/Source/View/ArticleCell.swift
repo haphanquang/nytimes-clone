@@ -28,25 +28,30 @@ class ArticleCell: UICollectionViewCell {
     @IBOutlet weak var btnBookmark: UIButton!
     @IBOutlet weak var btnShare: UIButton!
     
-    @IBOutlet weak var widthConstraint: NSLayoutConstraint!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
 
+        contentView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.backgroundColor = .white
     }
     
     private func refresh() {
-        imageView.setImage(viewModel.image ?? "", placeHolder: nil, completion: nil)
+//        imageView.setImage(viewModel.image ?? "", placeHolder: nil, completion: nil)
         lblAuthor.text = viewModel.author
         lblHeadline.text = viewModel.title
         lblContent.text = viewModel.desription
         lblTime.text = viewModel.time?.timeAgo
     }
     
-    override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
-        let width = UIScreen.main.bounds.size.width
-        layoutAttributes.bounds.size.width = width
-        layoutAttributes.bounds.size.height = systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
-        return layoutAttributes
+    
+    lazy var width: NSLayoutConstraint = {
+        let width = contentView.widthAnchor.constraint(equalToConstant: bounds.size.width)
+        width.isActive = true
+        return width
+    }()
+    
+    override func systemLayoutSizeFitting(_ targetSize: CGSize, withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize {
+        width.constant = bounds.size.width
+        return contentView.systemLayoutSizeFitting(CGSize(width: UIScreen.main.bounds.size.width, height: 1))
     }
 }

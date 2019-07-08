@@ -41,9 +41,10 @@ class HomeViewModel: BasicViewModel, Pagingable {
         localRepo = LocalDataRespository()
         fastAccessRepo = FastAccessRepository()
         networkRepo = NetworkRepository()
+        
+        dateFormatter.dateStyle = .full
+        
     }
-    
-    
     
     //MARK: Output
     var articles: [Article] = [] {
@@ -52,7 +53,7 @@ class HomeViewModel: BasicViewModel, Pagingable {
         }
     }
     
-    var searchTerms: [Term] = [] {
+    var searchTerms: [String] = [] {
         didSet {
             onStateReloaded?()
         }
@@ -64,11 +65,7 @@ class HomeViewModel: BasicViewModel, Pagingable {
         }
     }
     
-    var updatedDate: Date = Date() {
-        didSet {
-            onStateReloaded?()
-        }
-    }
+    var statusText: String = "Loading...".localized
     
     //Mark: Input
     func requestGetInitData() {
@@ -77,32 +74,33 @@ class HomeViewModel: BasicViewModel, Pagingable {
     }
     
     func requestGetArticles(filterKeyword: String?) {
+        statusText = "Loading...".localized
         onStartWaiting?()
-        
         currentKeyword = filterKeyword
+        
         networkRepo?.doRequest(NYTimesRequest.search(filterKeyword, currentPage), completion: { [weak self] (message: String?, data: NYSearchResult?) in
             guard let `self` = self else {return}
+            
+            self.statusText = "Updated ".localized + dateFormatter.string(from: Date())
             self.onFinishWaiting?()
             
-            guard let data = data else {
-                print(message)
-                return
-            }
+            guard let data = data else { return }
             
             self.articles.append(contentsOf: data.response?.docs ?? [])
-            
-            print(self.articles.count)
+            self.hasNextPage = true
         })
     }
     
     func requestGetNextArticles() {
         guard hasNextPage else { return }
+        guard statusText != "Loading...".localized else { return } //cheating
         
         currentPage += 1
         requestGetArticles(filterKeyword: currentKeyword)
     }
     
-    func requestGetSavedSearchTerms() {
+    
+    func addToHistory(_ keyword: String) {
         
     }
 }

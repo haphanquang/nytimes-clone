@@ -53,7 +53,7 @@ class HomeViewModel: BasicViewModel, Pagingable {
         }
     }
     
-    var searchTerms: [String] = [] {
+    var searchHistories: [String] = [] {
         didSet {
             onStateReloaded?()
         }
@@ -76,8 +76,16 @@ class HomeViewModel: BasicViewModel, Pagingable {
     func requestGetArticles(filterKeyword: String?) {
         statusText = "Loading...".localized
         onStartWaiting?()
-        currentKeyword = filterKeyword
         
+        if currentKeyword != filterKeyword {
+            currentPage = 0
+        }
+    
+        if let keyword = filterKeyword {
+            addToHistory(keyword)
+        }
+        
+        currentKeyword = filterKeyword
         networkRepo?.doRequest(NYTimesRequest.search(filterKeyword, currentPage), completion: { [weak self] (message: String?, data: NYSearchResult?) in
             guard let `self` = self else {return}
             
@@ -99,8 +107,15 @@ class HomeViewModel: BasicViewModel, Pagingable {
         requestGetArticles(filterKeyword: currentKeyword)
     }
     
+    func loadKeywordHistories() {
+        localRepo?.getRecentKeywords(completion: { [weak self] keywords in
+            self?.searchHistories = keywords
+        })
+    }
     
     func addToHistory(_ keyword: String) {
-        
+        localRepo?.insertToHistories(keyword: keyword, { result in
+            print(result)
+        })
     }
 }

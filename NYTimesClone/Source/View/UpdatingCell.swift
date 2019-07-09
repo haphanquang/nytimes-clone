@@ -17,7 +17,7 @@ class UpdatingCell : UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        contentView.translatesAutoresizingMaskIntoConstraints = false
+//        contentView.translatesAutoresizingMaskIntoConstraints = false
         contentView.backgroundColor = .clear
         
         contentView.backgroundColor = UIColor.clear

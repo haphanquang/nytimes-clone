@@ -17,7 +17,7 @@ class LoadMoreCell : UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        contentView.translatesAutoresizingMaskIntoConstraints = false
+//        contentView.translatesAutoresizingMaskIntoConstraints = false
         contentView.backgroundColor = .white
         
         indicator.hidesWhenStopped = true

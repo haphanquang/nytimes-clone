@@ -27,12 +27,12 @@ class ArticleCell: UICollectionViewCell {
     @IBOutlet weak var lblTime: UILabel!
     @IBOutlet weak var btnBookmark: UIButton!
     @IBOutlet weak var btnShare: UIButton!
+    @IBOutlet weak var stackContent: UIStackView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
-        contentView.translatesAutoresizingMaskIntoConstraints = false
         contentView.backgroundColor = .white
+        width.constant = UIScreen.main.bounds.width
     }
     
     private func refresh() {
@@ -45,13 +45,13 @@ class ArticleCell: UICollectionViewCell {
     
     
     lazy var width: NSLayoutConstraint = {
-        let width = contentView.widthAnchor.constraint(equalToConstant: bounds.size.width)
+        let width = stackContent.widthAnchor.constraint(equalToConstant: bounds.size.width)
         width.isActive = true
+        width.priority = UILayoutPriority.required
         return width
     }()
     
     override func systemLayoutSizeFitting(_ targetSize: CGSize, withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize {
-        width.constant = bounds.size.width
         return contentView.systemLayoutSizeFitting(CGSize(width: UIScreen.main.bounds.size.width, height: 1))
     }
 }

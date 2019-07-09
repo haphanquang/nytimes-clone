@@ -1,5 +1,5 @@
 //
-//  SearchTermsViewController.swift
+//  SearchHistoriesViewController.swift
 //  NYTimesClone
 //
 //  Created by QH on 7/8/19.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SearchTermsViewController : BaseViewController<SearchTermViewModel> {
+class SearchHistoriesViewController : BaseViewController<SearchHistoriesViewModel> {
     @IBOutlet weak var tblTerms: UITableView!
     
     var onSelectedKeyword: ((String) -> ())?
@@ -30,10 +30,11 @@ class SearchTermsViewController : BaseViewController<SearchTermViewModel> {
             self?.tblTerms.reloadData()
         }
     }
+
     
 }
 
-extension SearchTermsViewController : UITableViewDelegate, UITableViewDataSource {
+extension SearchHistoriesViewController : UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

@@ -13,4 +13,14 @@ struct DetailViewModel : BasicViewModel {
     var onStartWaiting: (() -> ())?
     var onFinishWaiting: (() -> ())?
     
+    var detailArticle: Article!
+    
+    init() {
+        
+    }
+    
+    func loadDetail() {
+        
+    }
+
 }

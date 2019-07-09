@@ -23,15 +23,21 @@ class Route {
         nav?.viewControllers = [home]
     }
     
-    static func createSearchTerm() -> SearchTermsViewController {
-        let vc = mainStoryboard.instantiateViewController(withIdentifier: "SearchTermsViewController") as! SearchTermsViewController
+    static func createSearchTerm() -> SearchHistoriesViewController {
+        let vc = mainStoryboard.instantiateViewController(withIdentifier: "SearchHistoriesViewController") as! SearchHistoriesViewController
         
-        let viewModel = SearchTermViewModel()
+        let viewModel = SearchHistoriesViewModel()
         vc.viewModel = viewModel
         return vc
     }
     
     static func showArticleDetail(from: UIViewController, article: Article) {
+        let vc = mainStoryboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         
+        var viewModel = DetailViewModel()
+        viewModel.detailArticle = article
+        vc.viewModel = viewModel
+        
+        from.navigationController?.pushViewController(vc, animated: true)
     }
 }

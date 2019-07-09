@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SearchTermViewModel : BasicViewModel {
+class SearchHistoriesViewModel : BasicViewModel {
     var onStateReloaded: (() -> ())?
     var onStartWaiting: (() -> ())?
     var onFinishWaiting: (() -> ())?

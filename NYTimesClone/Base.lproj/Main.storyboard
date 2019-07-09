@@ -153,10 +153,10 @@
                                                     </subviews>
                                                 </view>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="Hf0-Uf-qHk" secondAttribute="trailing" id="6md-0B-EO9"/>
-                                                    <constraint firstItem="Hf0-Uf-qHk" firstAttribute="top" secondItem="NkJ-2z-lK4" secondAttribute="top" id="Alz-UR-wvr"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Hf0-Uf-qHk" secondAttribute="bottom" id="Sb6-3a-sh1"/>
-                                                    <constraint firstItem="Hf0-Uf-qHk" firstAttribute="leading" secondItem="NkJ-2z-lK4" secondAttribute="leading" id="t7a-xg-89u"/>
+                                                    <constraint firstItem="Hf0-Uf-qHk" firstAttribute="leading" secondItem="NkJ-2z-lK4" secondAttribute="leading" id="41P-Yx-elc"/>
+                                                    <constraint firstItem="Hf0-Uf-qHk" firstAttribute="top" secondItem="NkJ-2z-lK4" secondAttribute="top" id="J4O-9y-gX1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Hf0-Uf-qHk" secondAttribute="trailing" id="hfG-vx-3nV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Hf0-Uf-qHk" secondAttribute="bottom" id="rkm-3E-tgd"/>
                                                 </constraints>
                                                 <size key="customSize" width="338" height="347"/>
                                                 <connections>
@@ -167,6 +167,7 @@
                                                     <outlet property="lblContent" destination="Y0n-ty-uO8" id="ns7-4S-RnS"/>
                                                     <outlet property="lblHeadline" destination="K9r-mS-I3N" id="90z-2D-0a1"/>
                                                     <outlet property="lblTime" destination="s5h-1D-Yao" id="Mza-YD-cGS"/>
+                                                    <outlet property="stackContent" destination="Hf0-Uf-qHk" id="Nv0-ZF-ktf"/>
                                                 </connections>
                                             </collectionViewCell>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LoadMoreCell" id="t76-xS-TAa" customClass="LoadMoreCell" customModule="NYTimesClone" customModuleProvider="target">
@@ -212,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="289.85507246376812" y="129.24107142857142"/>
         </scene>
-        <!--Search Terms View Controller-->
+        <!--Search Histories View Controller-->
         <scene sceneID="tiP-Sh-9ly">
             <objects>
-                <viewController storyboardIdentifier="SearchTermsViewController" id="lFW-66-M8G" customClass="SearchTermsViewController" customModule="NYTimesClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchHistoriesViewController" id="lFW-66-M8G" customClass="SearchHistoriesViewController" customModule="NYTimesClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="POC-xn-kAT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

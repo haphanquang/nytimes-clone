@@ -19,7 +19,6 @@ class LoadMoreCell : UICollectionViewCell {
         
 //        contentView.translatesAutoresizingMaskIntoConstraints = false
         contentView.backgroundColor = .white
-        
         indicator.hidesWhenStopped = true
     }
     

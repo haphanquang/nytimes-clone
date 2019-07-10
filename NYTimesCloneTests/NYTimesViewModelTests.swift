@@ -11,14 +11,37 @@ import XCTest
 @testable import NYTimesClone
 
 class NYTimesViewModelTests: XCTestCase {
+
     
-    
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+}
+
+class HomeViewModelTests: XCTestCase {
+    func testGetArticles () {
+        XCTAssert(false, "Invalid result")
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testGetFirstLoadArticles() {
+        XCTAssert(false, "Invalid result")
     }
+    func testGetNextPageArticles() {
+        XCTAssert(false, "Invalid result")
+    }
+    func testGetHistories() {
+        XCTAssert(false, "Invalid result")
+    }
+    func testSaveHistory() {
+        XCTAssert(false, "Invalid result")
+    }
+    func testGetArticleWithKeyword() {
+        XCTAssert(false, "Invalid result")
+    }
+}
+
+class SearchHistoryViewModelTests: XCTestCase {
+    func testLoadKeywords() {
+        XCTAssert(false, "Invalid result")
+    }
+}
+
+class ArticleViewModelTests: XCTestCase {
     
 }

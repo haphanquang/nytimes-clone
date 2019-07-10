@@ -19,6 +19,7 @@
 		F046232E22D1026F008236A3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F046232D22D1026F008236A3 /* DetailViewController.swift */; };
 		F046233122D10766008236A3 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = F046233022D10766008236A3 /* Route.swift */; };
 		F046233322D1113A008236A3 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F046233222D1113A008236A3 /* DetailViewModel.swift */; };
+		F081250122D60DB000913264 /* NYTimeRouteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081250022D60DB000913264 /* NYTimeRouteTest.swift */; };
 		F097B84122CE3BE600B4F49D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F097B84022CE3BE600B4F49D /* AppDelegate.swift */; };
 		F097B84622CE3BE600B4F49D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F097B84422CE3BE600B4F49D /* Main.storyboard */; };
 		F097B84822CE3BE900B4F49D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F097B84722CE3BE900B4F49D /* Assets.xcassets */; };
@@ -76,6 +77,7 @@
 		F046232D22D1026F008236A3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F046233022D10766008236A3 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		F046233222D1113A008236A3 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		F081250022D60DB000913264 /* NYTimeRouteTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimeRouteTest.swift; sourceTree = "<group>"; };
 		F097B83D22CE3BE600B4F49D /* NYTimesClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimesClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F097B84022CE3BE600B4F49D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F097B84522CE3BE600B4F49D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -181,10 +183,11 @@
 				F097B85522CE3BE900B4F49D /* NYTimesCloneTests.swift */,
 				F02D193A22D23103006C5A47 /* NYTimesModelTests.swift */,
 				F02D193C22D2311E006C5A47 /* NYTimesViewModelTests.swift */,
+				F02D194222D23348006C5A47 /* NYTimesViewTest.swift */,
 				F02D193E22D2312E006C5A47 /* NYTimesRepoTests.swift */,
 				F02D194022D23142006C5A47 /* NYTimesUtilTests.swift */,
+				F081250022D60DB000913264 /* NYTimeRouteTest.swift */,
 				F097B85722CE3BE900B4F49D /* Info.plist */,
-				F02D194222D23348006C5A47 /* NYTimesViewTest.swift */,
 			);
 			path = NYTimesCloneTests;
 			sourceTree = "<group>";
@@ -204,9 +207,9 @@
 				F097B87122CE3C8200B4F49D /* Utils */,
 				F097B87222CE3C8200B4F49D /* Model */,
 				F097B87022CE3C8200B4F49D /* Repository */,
-				F097B87322CE3C8200B4F49D /* View */,
 				F097B86F22CE3C8200B4F49D /* ViewModel */,
 				F097B87422CE3C8200B4F49D /* ViewController */,
+				F097B87322CE3C8200B4F49D /* View */,
 				F046232F22D10750008236A3 /* Route */,
 			);
 			path = Source;
@@ -452,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F081250122D60DB000913264 /* NYTimeRouteTest.swift in Sources */,
 				F02D194322D23348006C5A47 /* NYTimesViewTest.swift in Sources */,
 				F02D194122D23142006C5A47 /* NYTimesUtilTests.swift in Sources */,
 				F097B85622CE3BE900B4F49D /* NYTimesCloneTests.swift in Sources */,

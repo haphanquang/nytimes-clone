@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class AdvertiseSectionCell : UICollectionViewCell {
+class AdvertiseSectionCell : UITableViewCell {
     
 }

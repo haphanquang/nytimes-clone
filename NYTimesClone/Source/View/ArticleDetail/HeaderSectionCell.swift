@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class HeaderSectionCell : UICollectionViewCell {
+class HeaderSectionCell : UITableViewCell {
     
 }

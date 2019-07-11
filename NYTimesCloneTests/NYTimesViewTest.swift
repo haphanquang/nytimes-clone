@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import XCTest
+@testable import NYTimesClone
+
+class NYTimesViewTests: XCTestCase {
+    
+}

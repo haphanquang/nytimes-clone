@@ -15,6 +15,22 @@ struct DetailViewModel : BasicViewModel {
     
     var detailArticle: Article!
     
+    var sectionCount: Int = 1{
+        didSet {
+            onStateReloaded?()
+        }
+    }
+    var rowCount: [Int] = [2]{
+        didSet {
+            onStateReloaded?()
+        }
+    }
+    var title: String = "" {
+        didSet {
+            onStateReloaded?()
+        }
+    }
+    
     init() {
         
     }
